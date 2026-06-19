@@ -276,3 +276,80 @@ hr {
         font-size: 1.8rem;
     }
 }
+/* ----------------------------------------------------
+   MOBILE MENU TOGGLE (HAMBURGER)
+---------------------------------------------------- */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    width: 30px;
+    height: 22px;
+    justify-content: space-between;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 4px;
+    background-color: var(--gold);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+/* Hamburger animation */
+.menu-toggle.open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* ----------------------------------------------------
+   MOBILE NAVIGATION
+---------------------------------------------------- */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        border-top: 2px solid var(--gold);
+        padding: 15px 0;
+        margin-top: 10px;
+    }
+
+    nav.nav-open {
+        display: flex;
+    }
+
+    nav a,
+    .dropbtn {
+        padding: 12px 0;
+        font-size: 1.1rem;
+    }
+
+    /* Dropdowns on mobile */
+    .dropdown-content {
+        position: static;
+        border: none;
+        background: #fafafa;
+        padding-left: 20px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
