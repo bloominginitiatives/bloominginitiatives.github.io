@@ -57,3 +57,44 @@ footer {
     text-align: center;
     margin-top: 50px;
 }
+/* --- Improve Layout & Spacing --- */
+.content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    line-height: 1.7;
+}
+
+/* --- Improve Navigation Hover Effect --- */
+nav a:hover {
+    color: #E8C07D;
+    transition: 0.3s ease;
+}
+
+/* --- Improve Buttons (CTA) --- */
+.cta {
+    background: #4A7C59;
+    padding: 14px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.cta:hover {
+    background: #3b6347;
+}
+
+/* --- Card Style (for future use) --- */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+/* --- Section Headings --- */
+h2 {
+    color: #4A7C59;
+    margin-bottom: 15px;
+}
