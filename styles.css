@@ -43,7 +43,7 @@ header {
 }
 
 .logo {
-    height: 210px;
+    height: 60px;
 }
 
 /* Site Title */
@@ -81,7 +81,7 @@ nav a:hover {
 /* Dropdown */
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: block; /* FIXES THE BUBBLE */
 }
 
 .dropbtn {
@@ -198,7 +198,7 @@ section, .card, .content-box {
     background-color: var(--gold-dark);
 }
 
-/* Optional Outline Button */
+/* Outline Button */
 .btn-outline {
     display: inline-block;
     padding: 10px 20px;
@@ -258,29 +258,10 @@ hr {
 }
 
 /* ----------------------------------------------------
-   MOBILE RESPONSIVE
----------------------------------------------------- */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .site-title {
-        font-size: 1.8rem;
-    }
-}
-/* ----------------------------------------------------
    MOBILE MENU TOGGLE (HAMBURGER)
 ---------------------------------------------------- */
 .menu-toggle {
-    display: none;
+    display: none; /* hidden on desktop */
     flex-direction: column;
     width: 30px;
     height: 22px;
@@ -313,14 +294,22 @@ hr {
 }
 
 /* ----------------------------------------------------
-   MOBILE NAVIGATION
+   MOBILE RESPONSIVE + MOBILE MENU
 ---------------------------------------------------- */
 @media (max-width: 768px) {
 
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* Show hamburger */
     .menu-toggle {
         display: flex;
     }
 
+    /* Hide desktop nav */
     nav {
         display: none;
         flex-direction: column;
@@ -331,6 +320,7 @@ hr {
         margin-top: 10px;
     }
 
+    /* Show nav when hamburger is clicked */
     nav.nav-open {
         display: flex;
     }
@@ -341,7 +331,6 @@ hr {
         font-size: 1.1rem;
     }
 
-    /* Dropdowns on mobile */
     .dropdown-content {
         position: static;
         border: none;
@@ -351,5 +340,9 @@ hr {
 
     .dropdown:hover .dropdown-content {
         display: block;
+    }
+
+    .site-title {
+        font-size: 1.8rem;
     }
 }
