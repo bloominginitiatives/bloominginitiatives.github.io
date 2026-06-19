@@ -29,7 +29,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     width: 100%;
     padding: 0 20px;
@@ -37,7 +37,7 @@ header {
 
 /* Logo sizing */
 .logo {
-    height: 210px;   /* Increase if you want it bigger */
+    height: 90px;   /* Adjust if needed */
     width: auto;
 }
 
@@ -51,14 +51,15 @@ header {
 
 /* Navigation links */
 nav a {
-    margin: 0 15px;
+    margin: 0 12px;
     color: #4A7C59;
     text-decoration: none;
     font-weight: 600;
+    font-size: 0.95rem;
 }
 
 nav a:hover {
-    color: #C9A86A; /* Gold accent */
+    color: #C9A86A;
     transition: 0.3s ease;
 }
 
