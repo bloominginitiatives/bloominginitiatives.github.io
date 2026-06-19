@@ -15,36 +15,44 @@ body {
    HEADER + NAVIGATION
 -------------------------------------------------- */
 header {
-    background: #FFFFFF; /* Clean white */
+    background: #FFFFFF;
     padding: 20px;
     color: #333;
-    text-align: center;
-    border-bottom: 2px solid #E8E2D9; /* Soft beige line */
+    border-bottom: 2px solid #E8E2D9;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
+
+/* Layout for the header */
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
 }
 
+/* Logo sizing */
 .logo {
-    height: 60px; /* Adjust size here */
+    height: 90px;   /* Increase if you want it bigger */
     width: auto;
 }
-/* Center the site title between logo + nav */
-header h1 {
+
+/* Keep the title centered between logo + nav */
+.site-title {
     flex: 1;
     text-align: center;
     margin: 0;
+    font-size: 2rem;
 }
+
+/* Navigation links */
 nav a {
     margin: 0 15px;
-    color: #4A7C59; /* Accent green */
+    color: #4A7C59;
     text-decoration: none;
     font-weight: 600;
 }
