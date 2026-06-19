@@ -24,6 +24,18 @@ header {
     top: 0;
     z-index: 1000;
 }
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 60px; /* Adjust size here */
+    width: auto;
+}
 
 nav a {
     margin: 0 15px;
