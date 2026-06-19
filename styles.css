@@ -1,14 +1,22 @@
 /* --------------------------------------------------
-   BRAND FONTS
+   GLOBAL STYLES
 -------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap');
-
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #FAF7F2; /* Soft ivory */
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #FAF9F6;
     color: #333;
-    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #4A7C59;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 /* --------------------------------------------------
@@ -16,174 +24,152 @@ body {
 -------------------------------------------------- */
 header {
     background: #FFFFFF;
-    padding: 20px;
-    color: #333;
+    padding: 20px 0;
     border-bottom: 2px solid #E8E2D9;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* Layout for the header */
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1400px;
     margin: 0 auto;
-    width: 100%;
     padding: 0 20px;
 }
 
-/* Logo sizing */
+/* Logo */
 .logo {
-    height: 90px;   /* Adjust if needed */
+    height: 90px;
     width: auto;
 }
 
-/* Keep the title centered between logo + nav */
+/* Title centered */
 .site-title {
     flex: 1;
     text-align: center;
     margin: 0;
     font-size: 2rem;
+    color: #4A7C59;
 }
 
-/* Navigation links */
-nav a {
-    margin: 0 12px;
+/* NAVIGATION */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a,
+.dropbtn {
+    font-size: 0.95rem;
+    font-weight: 600;
     color: #4A7C59;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 10px;
 }
 
-nav a:hover {
+nav a:hover,
+.dropbtn:hover {
     color: #C9A86A;
     transition: 0.3s ease;
 }
 
 /* --------------------------------------------------
-   HERO SECTION
+   DROPDOWN MENU
 -------------------------------------------------- */
-.hero {
-    padding: 100px 20px;
-    text-align: center;
-    background: #FFFFFF;
-    border-bottom: 2px solid #E8E2D9;
-}
-
-.hero h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #4A7C59;
-}
-
-/* --------------------------------------------------
-   BUTTONS (CTA)
--------------------------------------------------- */
-.cta {
+.dropdown {
+    position: relative;
     display: inline-block;
-    padding: 14px 30px;
-    background: #C9A86A; /* Gold */
-    color: white;
-    border-radius: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 180px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 14px;
+    color: #4A7C59;
     text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s ease;
+    font-weight: 500;
 }
 
-.cta:hover {
-    background: #b08f55; /* Darker gold */
+.dropdown-content a:hover {
+    background-color: #F5F1EB;
 }
 
-/* --------------------------------------------------
-   MAIN CONTENT AREA
--------------------------------------------------- */
-.content {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
-}
-
-/* --------------------------------------------------
-   CARDS (Used for Forms)
--------------------------------------------------- */
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    border: 1px solid #E8E2D9;
-    margin-top: 20px;
-}
-
-/* --------------------------------------------------
-   FORMS
--------------------------------------------------- */
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #D6CEC3;
-    font-size: 1rem;
-    background: #FFFDF9;
-}
-
-textarea {
-    resize: vertical;
-}
-
-/* --------------------------------------------------
-   HEADINGS
--------------------------------------------------- */
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-}
-
-h2 {
-    color: #4A7C59; /* Accent green */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* --------------------------------------------------
    FOOTER
 -------------------------------------------------- */
 footer {
-    background: #FFFFFF;
-    color: #4A7C59;
-    padding: 20px;
+    background: #4A7C59;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 60px;
     text-align: center;
-    border-top: 2px solid #E8E2D9;
-    margin-top: 50px;
+}
+
+footer a {
+    color: #E8E2D9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #FFFFFF;
 }
 
 /* --------------------------------------------------
-   ANIMATIONS
+   BUTTONS
 -------------------------------------------------- */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1.2s ease forwards;
+button,
+.btn {
+    background-color: #4A7C59;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
 }
 
-@keyframes fadeIn {
-    to { opacity: 1; }
+button:hover,
+.btn:hover {
+    background-color: #C9A86A;
+    transition: 0.3s ease;
 }
 
 /* --------------------------------------------------
-   RESPONSIVE DESIGN (MOBILE FRIENDLY)
+   RESPONSIVE DESIGN
 -------------------------------------------------- */
-@media (max-width: 768px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
+@media (max-width: 900px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .hero {
-        padding: 60px 20px;
+    .site-title {
+        font-size: 1.6rem;
     }
 
-    h2 {
-        font-size: 1.8rem;
+    .logo {
+        height: 70px;
     }
 }
