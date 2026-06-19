@@ -334,8 +334,8 @@ hr {
     .dropdown-content {
         position: static;
         border: none;
-        background: #fafafa;
-        padding-left: 20px;
+        background: #fff;
+        padding-left: 0px;
     }
 
     .dropdown:hover .dropdown-content {
