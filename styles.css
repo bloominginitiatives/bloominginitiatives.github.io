@@ -6,7 +6,7 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background: #fafafa;
+    background: #FAF7F2; /* Soft ivory */
     color: #333;
     line-height: 1.7;
 }
@@ -15,10 +15,11 @@ body {
    HEADER + NAVIGATION
 -------------------------------------------------- */
 header {
-    background: #4A7C59;
+    background: #FFFFFF; /* Clean white */
     padding: 20px;
-    color: white;
+    color: #333;
     text-align: center;
+    border-bottom: 2px solid #E8E2D9; /* Soft beige line */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -26,13 +27,13 @@ header {
 
 nav a {
     margin: 0 15px;
-    color: white;
+    color: #4A7C59; /* Accent green */
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 nav a:hover {
-    color: #E8C07D;
+    color: #C9A86A; /* Gold accent */
     transition: 0.3s ease;
 }
 
@@ -42,13 +43,15 @@ nav a:hover {
 .hero {
     padding: 100px 20px;
     text-align: center;
-    background: linear-gradient(135deg, #D9F2E6, #FFF9F2);
+    background: #FFFFFF;
+    border-bottom: 2px solid #E8E2D9;
 }
 
 .hero h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: #4A7C59;
 }
 
 /* --------------------------------------------------
@@ -57,16 +60,16 @@ nav a:hover {
 .cta {
     display: inline-block;
     padding: 14px 30px;
-    background: #4A7C59;
+    background: #C9A86A; /* Gold */
     color: white;
-    border-radius: 10px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s ease;
 }
 
 .cta:hover {
-    background: #3b6347;
+    background: #b08f55; /* Darker gold */
 }
 
 /* --------------------------------------------------
@@ -85,7 +88,8 @@ nav a:hover {
     background: white;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    border: 1px solid #E8E2D9;
     margin-top: 20px;
 }
 
@@ -96,8 +100,9 @@ input, textarea {
     width: 100%;
     padding: 12px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #D6CEC3;
     font-size: 1rem;
+    background: #FFFDF9;
 }
 
 textarea {
@@ -112,17 +117,18 @@ h1, h2, h3 {
 }
 
 h2 {
-    color: #4A7C59;
+    color: #4A7C59; /* Accent green */
 }
 
 /* --------------------------------------------------
    FOOTER
 -------------------------------------------------- */
 footer {
-    background: #333;
-    color: white;
+    background: #FFFFFF;
+    color: #4A7C59;
     padding: 20px;
     text-align: center;
+    border-top: 2px solid #E8E2D9;
     margin-top: 50px;
 }
 
