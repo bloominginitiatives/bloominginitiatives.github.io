@@ -6,60 +6,89 @@
     <title>Volunteer | Blooming Initiatives</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
 <header>
     <div class="header-container">
 
-        <!-- Left: Logo -->
-        <a href="index.html" class="logo-container">
-            <img src="blooming-logo.png" alt="Blooming Initiatives Logo" class="logo">
+        <!-- Logo -->
+        <a href="index.html">
+            <img src="Blooming-Logo.png" alt="Blooming Initiatives Logo" class="logo">
         </a>
 
-        <!-- Center: Title -->
+        <!-- Title -->
         <h1 class="site-title">Blooming Initiatives</h1>
 
-        <!-- Right: Navigation -->
+        <!-- Navigation -->
         <nav>
+
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="programs.html">Programs</a>
-            <a href="volunteer.html">Volunteer</a>
-            <a href="donate.html">Donate</a>
-            <a href="careers.html">Careers</a>
-            <a href="contact.html">Contact</a>
-            <a href="events.html">Events</a>
-            <a href="blog.html">Blog</a>
-            <a href="community.html">Community</a>
-            <a href="book.html">Book Online</a>
-            <a href="members.html">Members</a>
-        </nav>
 
+            <!-- Programs Dropdown -->
+            <div class="dropdown">
+                <button class="dropbtn">Programs ▾</button>
+                <div class="dropdown-content">
+                    <a href="programs.html">Programs</a>
+                    <a href="events.html">Events</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+            </div>
+
+            <!-- Get Involved Dropdown -->
+            <div class="dropdown">
+                <button class="dropbtn">Get Involved ▾</button>
+                <div class="dropdown-content">
+                    <a href="volunteer.html">Volunteer</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="book.html">Book Online</a>
+                </div>
+            </div>
+
+            <!-- Community Dropdown -->
+            <div class="dropdown">
+                <button class="dropbtn">Community ▾</button>
+                <div class="dropdown-content">
+                    <a href="community.html">Community</a>
+                    <a href="members.html">Members</a>
+                </div>
+            </div>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
     </div>
 </header>
 
-<section class="content fade-in">
+<main>
     <h2>Volunteer With Us</h2>
-    <p>Your time and compassion can change lives. Join our community of volunteers and help us make a lasting impact.</p>
+    <p>Volunteers are the heart of Blooming Initiatives. Your time, energy, and compassion help us create meaningful change in the community.</p>
 
-    <h3>Volunteer Interest Form</h3>
+    <h3>Why Volunteer?</h3>
+    <ul>
+        <li>Make a positive impact in your community</li>
+        <li>Support individuals and families in need</li>
+        <li>Gain valuable experience and skills</li>
+        <li>Connect with like‑minded people</li>
+    </ul>
 
-    <form action="#" method="POST" class="card">
-        <label>Full Name</label><br>
-        <input type="text" name="name" required><br><br>
+    <h3>How to Get Started</h3>
+    <p>Fill out our volunteer interest form or contact us directly to learn more about current opportunities.</p>
 
-        <label>Email</label><br>
-        <input type="email" name="email" required><br><br>
-
-        <label>Why do you want to volunteer?</label><br>
-        <textarea name="message" rows="5" required></textarea><br><br>
-
-        <button class="cta" type="submit">Submit</button>
-    </form>
-</section>
+    <p><a class="btn" href="thankyou-volunteer.html">Submit Volunteer Form</a></p>
+</main>
 
 <footer>
-    <p>© 2026 Blooming Initiatives. All rights reserved.</p>
+    <p>
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="disclaimers.html">Disclaimers</a> |
+        <a href="accessibility.html">Accessibility</a> |
+        <a href="instagram.html">Instagram Feed</a> |
+        <a href="thankyou-donation.html">Thank You (Donation)</a> |
+        <a href="thankyou-volunteer.html">Thank You (Volunteer)</a>
+    </p>
 </footer>
+
 </body>
 </html>
