@@ -36,7 +36,12 @@ header {
     height: 60px; /* Adjust size here */
     width: auto;
 }
-
+/* Center the site title between logo + nav */
+header h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
 nav a {
     margin: 0 15px;
     color: #4A7C59; /* Accent green */
