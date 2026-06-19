@@ -98,3 +98,17 @@ h2 {
     color: #4A7C59;
     margin-bottom: 15px;
 }
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
