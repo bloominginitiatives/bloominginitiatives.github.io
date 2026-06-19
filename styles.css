@@ -1,25 +1,27 @@
+/* --------------------------------------------------
+   BRAND FONTS
+-------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap');
 
 body {
-    font-family: 'Inter', sans-serif;
-}
-
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-}
-
-body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     background: #fafafa;
     color: #333;
+    line-height: 1.7;
 }
 
+/* --------------------------------------------------
+   HEADER + NAVIGATION
+-------------------------------------------------- */
 header {
-    background: #4a7c59;
+    background: #4A7C59;
     padding: 20px;
     color: white;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -29,53 +31,36 @@ nav a {
     font-weight: bold;
 }
 
-.hero {
-    padding: 100px 20px;
-    text-align: center;
-    background: linear-gradient(135deg, #d9f2e6, #f7fff9);
-}
-
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.cta {
-    display: inline-block;
-    padding: 12px 25px;
-    background: #4a7c59;
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-footer {
-    background: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-top: 50px;
-}
-/* --- Improve Layout & Spacing --- */
-.content {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
-    line-height: 1.7;
-}
-
-/* --- Improve Navigation Hover Effect --- */
 nav a:hover {
     color: #E8C07D;
     transition: 0.3s ease;
 }
 
-/* --- Improve Buttons (CTA) --- */
+/* --------------------------------------------------
+   HERO SECTION
+-------------------------------------------------- */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #D9F2E6, #FFF9F2);
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* --------------------------------------------------
+   BUTTONS (CTA)
+-------------------------------------------------- */
 .cta {
-    background: #4A7C59;
+    display: inline-block;
     padding: 14px 30px;
+    background: #4A7C59;
+    color: white;
     border-radius: 10px;
+    text-decoration: none;
     font-weight: bold;
     transition: 0.3s ease;
 }
@@ -84,20 +69,78 @@ nav a:hover {
     background: #3b6347;
 }
 
-/* --- Card Style (for future use) --- */
+/* --------------------------------------------------
+   MAIN CONTENT AREA
+-------------------------------------------------- */
+.content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* --------------------------------------------------
+   CARDS (Used for Forms)
+-------------------------------------------------- */
 .card {
     background: white;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-/* --- Section Headings --- */
+/* --------------------------------------------------
+   FORMS
+-------------------------------------------------- */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* --------------------------------------------------
+   HEADINGS
+-------------------------------------------------- */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
 h2 {
     color: #4A7C59;
-    margin-bottom: 15px;
 }
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* --------------------------------------------------
+   ANIMATIONS
+-------------------------------------------------- */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* --------------------------------------------------
+   RESPONSIVE DESIGN (MOBILE FRIENDLY)
+-------------------------------------------------- */
 @media (max-width: 768px) {
     nav a {
         display: block;
