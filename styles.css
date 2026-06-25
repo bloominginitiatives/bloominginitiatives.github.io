@@ -385,3 +385,161 @@ hr {
     margin-bottom: 15px;
     color: #444;
 }
+/* ----------------------------------------------------
+   PROGRAMS PAGE LINK STYLE
+---------------------------------------------------- */
+.program-link {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.program-link:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------------------------------------
+   PEACE FOR MOMS — HERO SECTION
+---------------------------------------------------- */
+.pfm-hero {
+    background: var(--gold);
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+    border-left: none; /* override global section border */
+}
+
+.pfm-hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.pfm-hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.pfm-btn {
+    background: white;
+    color: var(--gold);
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.pfm-btn:hover {
+    background: #f5f5f5;
+}
+
+/* ----------------------------------------------------
+   PEACE FOR MOMS — SERVICES GRID
+---------------------------------------------------- */
+.pfm-services {
+    padding: 60px 20px;
+    text-align: center;
+    border-left: none;
+}
+
+.pfm-services h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.pfm-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.pfm-card {
+    background: white;
+    border: 1px solid var(--gold);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.pfm-card h3 {
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+/* ----------------------------------------------------
+   QUALIFICATIONS + HOW IT WORKS
+---------------------------------------------------- */
+.pfm-qualify, .pfm-how {
+    padding: 50px 20px;
+    background: #fafafa;
+    border-left: none;
+}
+
+.pfm-qualify h2, .pfm-how h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pfm-qualify ul, .pfm-how ol {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* ----------------------------------------------------
+   APPLICATION FORM
+---------------------------------------------------- */
+.pfm-apply {
+    padding: 60px 20px;
+    text-align: center;
+    border-left: none;
+}
+
+.pfm-form-container {
+    max-width: 900px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid var(--gold);
+}
+
+/* ----------------------------------------------------
+   CTA BUTTONS
+---------------------------------------------------- */
+.pfm-cta {
+    text-align: center;
+    padding: 40px 20px;
+    border-left: none;
+}
+
+.pfm-btn-outline {
+    border: 2px solid var(--gold);
+    padding: 12px 28px;
+    border-radius: 6px;
+    color: var(--gold);
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.pfm-btn-outline:hover {
+    background: var(--gold);
+    color: white;
+}
+
+/* ----------------------------------------------------
+   MOBILE RESPONSIVE — PEACE FOR MOMS
+---------------------------------------------------- */
+@media (max-width: 600px) {
+    .pfm-hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .pfm-hero-content p {
+        font-size: 1rem;
+    }
+}
